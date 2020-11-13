@@ -1,0 +1,25 @@
+1. 以下何者不是描述非同步 (C)
+    A. 等待時不會占用原本的執行續
+    B. 應該避免以同步的方式呼叫
+    C. 應該在所有情境使用
+    D. 英文名稱為Asynchronous
+
+2. 以下何者不是非同步的優點 (D)
+    A. 避免資源無法回應耗光執行續
+    B. 整體效能提升
+    C. 降低大流量時的執行續負擔
+    D. 減少程式所占用空間
+
+3. 以下何者不適合使用非同步 (A)
+    A. 算術運算
+    B. 存取資料庫
+    C. 在硬碟寫入檔案
+    D. 網路爬蟲
+
+4. 將以下方法宣告轉換為非同步：
+    internal static Customer GetCustomerById(int id);
+    (internal static async Task<Customer> GetCustomerByIdAsync(int id);)
+
+5. 將以下方法呼叫轉換為非同步(呼叫的方法本身有非同步的版本ReadToEndAsync())：
+    var content = streamReader.ReadToEnd();
+    (var content = await streamReader.ReadToEndAsync();)
